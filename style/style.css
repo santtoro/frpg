@@ -1,20 +1,88 @@
-:root {
-    --bg-padrao:;
-    --bg-box:;
-    --bg-botao:;
-    --bg-input:;
+body.dark {
+    --bg: #0e1023;
+    --color: white;
+    --border-color: #23304f;
 
-    --font-color-padrao:;
-    --font-color-secundaria:;
-    --font-color-detalhes:;
-
-    --font-padrao:;
-    --font-secundaria:;
 }
 
-
-body.light {
+* {
+    padding: 0;
+    margin: 0;
 }
 
-body.dark {   
+button#theme-toggle {
+    padding: 10px;
+    width: 40px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1rem;
+    border-radius: 100px;
+    border: none;
+    right: 20px;
+    top: 20px;
+    position: fixed;
+    transition: .6s;
+}
+
+body.dark button#theme-toggle {
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+body.light button#theme-toggle {
+    background-color: rgb(11, 10, 22);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 50px;
+    font-family: 'DM Sans';
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+.forum-click img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.forum-click img:hover {
+    box-shadow: 0px 0px 7px 2px #0089af6e;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.list-type {
+    display: inline-flex !important;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.forum-click a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.forum-click.nsfw-y:before {
+    content: "NSFW";
+    position: absolute;
+    background: #cf1111;
+    font-size: .6rem;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.premium-y h3:before {
+    content: "\f521";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    color: #ff9b00;
 }

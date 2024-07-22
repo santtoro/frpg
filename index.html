@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +7,26 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/9a8bb06fd8.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <button id="theme-toggle"><i class="fa-regular fa-lightbulb"></i></button>
+    <div id="menu"><button id="theme-toggle"><i class="fa-regular fa-lightbulb"></i></button></div>
 
-    <div id="ads-banner"></div>
     <div id="main">
-        <div id="left">
-            <h1>Mesas em alta</h1>
-            <div id="rpg-lists"></div>
-            <h1>Novidades</h1>
-            <div id="rpg-new"></div>
-        </div>
-        <div id="right">
-            <div id="ctadiscord">
-                <p>Participe do Discord e fique por dentro das novidades</p><a
-                    href="https://discord.gg/2U72mfZbDm">Entrar agora!</a>
-            </div>
-            <div id="regsteps">
-                <a href="/" class="register-form"></a>
-                <div class="step"><span>1</span>
-                    <p>Coloque o código abaixo no seu site</p>
-                    <div class="step"><span>2</span>
-                        <p>Preencha o formulário e aguarde</p>
-                    </div>
-                    <div class="step"><span>3</span>
-                        <p>Se estiver tudo correto seu RPG estará na lista em até 72h</p>
-                    </div>
-                </div>
-                <div id="code"></div>
-            </div>
-        </div>
-        <script type="module" src="scripts/skin.js"></script>
-        <script type="module" src="scripts/main.js"></script>
-</body>
 
+        <div id="search-results"></div>
+
+        <h1>Mesas em alta</h1>
+        <div class="list-type rpg-hype"></div>
+
+        <h1>Novidades</h1>
+        <div class="list-type rpg-new"></div>
+
+        <h1>Explore</h1>
+        <div class="list-type rpg-explore"></div>
+    </div>
+
+    <script type="module" src="scripts/foruns.js"></script>
+    <script type="module" src="scripts/search.js"></script>
+    <script type="module" src="scripts/skin.js"></script>
+
+</body>
 </html>

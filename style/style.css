@@ -1,0 +1,20 @@
+:root {
+    --bg-padrao:;
+    --bg-box:;
+    --bg-botao:;
+    --bg-input:;
+
+    --font-color-padrao:;
+    --font-color-secundaria:;
+    --font-color-detalhes:;
+
+    --font-padrao:;
+    --font-secundaria:;
+}
+
+
+body.light {
+}
+
+body.dark {   
+}
